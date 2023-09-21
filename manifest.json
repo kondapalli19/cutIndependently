@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "CutIndependently",
+    "version": "0.0.1",
+    "description": "Effortlessly extract and save objects from the screen in high-quality .png format",
+    "permissions": [
+      "scripting",
+      "tabs",
+      "activeTab",
+      "downloads"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "128": "logo.png"
+      }
+    },
+    "icons": {
+      "128": "logo.png"
+    },
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    }
+  }
+  
